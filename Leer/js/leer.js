@@ -18,20 +18,16 @@ function verificacionModo(){
         introduccion.classList.add('introduccionDM');
         introduccion.classList.remove('introduccion');
 
-        introduccioncontenido.classList.add('introduccion-contenidoDM');
-        introduccioncontenido.classList.remove('introduccion-contenido');
-
-        portada.classList.add('portadaDM');
-        portada.classList.remove('portada');
-
         pie.classList.add('pieDM');
         pie.classList.remove('pie');
 
         redes.classList.add('redesDM');
         redes.classList.remove('redes');
 
-        botonDM.style.display = 'flex'
-        boton.style.display = 'none'
+        pdfOscuro.style.display = 'block'
+
+        elPDF.style.display = 'none'
+        elPDFDM.style.display = 'block'
     }
     else if (document.getElementById("modoClaro").checked){
         navegacionPrincipal.classList.add('navegacion-principal');
@@ -52,20 +48,16 @@ function verificacionModo(){
         introduccion.classList.add('introduccion');
         introduccion.classList.remove('introduccionDM');
 
-        introduccioncontenido.classList.add('introduccion-contenido');
-        introduccioncontenido.classList.remove('introduccion-contenidoDM');
-
-        portada.classList.add('portada');
-        portada.classList.remove('portadaDM');
-
         pie.classList.add('pie');
         pie.classList.remove('pieDM');
 
         redes.classList.add('redes');
         redes.classList.remove('redesDM');
 
-        boton.style.display = 'flex'
-        botonDM.style.display = 'none'
+        pdfOscuro.style.display = 'none'
+
+        elPDF.style.display = 'block'
+        elPDFDM.style.display = 'none'
     }
 }
 
@@ -83,11 +75,12 @@ let modoLectura = document.getElementById('modoLectura');
 let iconoOscuro = document.getElementById('iconoOscuro');
 let iconoClaro = document.getElementById('iconoClaro');
 let introduccion = document.getElementById('introduccion');
-let introduccioncontenido = document.getElementById('introduccion-contenido');
-let portada = document.getElementById('portada');
-let boton = document.getElementById('boton');
-let botonDM = document.getElementById('botonDM');
+let pdfOscuro = document.getElementById('pdfOscuro');
+let elPDF = document.getElementById('elPDF');
+let elPDFDM = document.getElementById('elPDFDM');
 let pie = document.getElementById('pie');
 let redes = document.getElementById('misRedes');
 
-botonDM.style.display = 'none'
+//con esto el pdf en modo oscuro no se ve
+pdfOscuro.style.display = 'none'
+elPDFDM.style.display = 'none'

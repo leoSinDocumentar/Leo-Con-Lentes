@@ -1,71 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/blog.css">
+        <link rel="icon" type="image/png" href="../assets/Logo Leo.png">
         <title>Leo Con Lentes</title>
     </head>
     <body>
         <section>
-            <header class="cabezera">
-                <section>
-                    <h1>Leo y Escribo por las Mariposas</h1>
-                </section>
-                
-                <section>
-                    <p>Darkmode</p>
-                    <p>Lightmode</p>
-                </section>
+            <header class="cabezera" id="cabezera">
+                <h1>Leo Con Lentes</h1>
             </header>
         </section>
 
-        <section>
-            <nav>
-                <section>
-                    <a href="../index.html">¿Qué es El juramento de 2009?</a>
-                    <a href="../Leer/leer.html">Leer El juramento de 2009</a>
-                    <a href="#">Ilustraciones y bocetos</a>
-                    <a href="#">Conoce el mundo</a>
-                    <a href="#">Blog / Actualizaciones</a>
-                    <a href="#">Apoyo</a>
-                    <a href="#">Redes</a>
-                </section>
+        <!-- Esta es la navegacion -->
 
-                <section class="modoLectura">
-                    <p>Darkmode</p>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
-                    
-                    <p>Lightmode</p>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brightness-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M12 5l0 .01" /><path d="M17 7l0 .01" /><path d="M19 12l0 .01" /><path d="M17 17l0 .01" /><path d="M12 19l0 .01" /><path d="M7 17l0 .01" /><path d="M5 12l0 .01" /><path d="M7 7l0 .01" /></svg>
-                </section>
-            </nav>
-        </section>
+        <nav class="navegacion-principal" id="navegacionPrincipal">
+            <section class="navegacion-botones" id="navegacion-botones">
+                <a href="../index.html">¿Qué es El juramento de 2009?</a>
+                <a href="../Leer/leer.html">Leer El juramento de 2009</a>
+                <a href="../Blog o actualizaciones/blog.html">Blog / Actualizaciones</a>
+                <a href="#misRedes">Redes</a>
+            </section>
 
-        <section>
+                <!-- Este es el modo de lectura, se escoge entre modo oscuro y modo claro -->
+
+            <section class="modoLectura" id="modoLectura">
+                <div class="modoLectura-contenedor">
+                    <article>
+                        <label for="modoOscuro" class="iconos-modo" id="iconoOscuro">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+                        </label>
+                        <input type="radio" name="modalidad" id="modoOscuro">
+                    </article>
+
+                    <article>
+                        <label for="modoClaro" class="iconos-modo" id="iconoClaro">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brightness-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M12 5l0 .01" /><path d="M17 7l0 .01" /><path d="M19 12l0 .01" /><path d="M17 17l0 .01" /><path d="M12 19l0 .01" /><path d="M7 17l0 .01" /><path d="M5 12l0 .01" /><path d="M7 7l0 .01" /></svg>
+                        </label>
+                        <input type="radio" name="modalidad" id="modoClaro">
+                    </article>
+                </div>
+            </section>
+        </nav>
+
+        <section class="sinopsis">
             <main>
-                <section class="introduccion">
-                    <h2>Blog</h2>
-                    <h3>Entrada 1: Hoy empieza todo</h3>
-                    <p>Con algo de inseguridad, el día de ayer, publiqué un "test" en la plataforma Wattpad, sobre mi futuro libro.<br></p>
-                    <p></p>
+                <section class="introduccion" id="introduccion">
+                    <h2>Blog / Actualizaciones</h2>
+
+                    <article class="sinopsis-contenido" id="sinopsis-contenido">
+                        <h3>Entrada 1 (23/08/2025)</h3>
+                        <p>Hace cinco días pasaron las elecciones en mi país; curioso, porque la trama principal de El Juramento de 2009, se centra en el inicio del proceso electoral.</p>
+                        <p>La historia se me ocurrió hace años, en un momento similar, se celebraban elecciones de mi país, un referendum para saber si, el presidente de ese entonces, podría ser reelegido. Las sorpresas no faltaron, mucha gente me contaba movimientos bastante raros que ocurrieron en el momento, pero yo no entendía muy bien las cosas; mi mente estaba ajena a la política, hasta que empieza un movimiento llamado el 21F. 21F era el nombre de la fecha en que se aprobó la "reeleción indefinida" en el país, con el argumento de que ser elegido, era un derecho humano. Desde que salió el movimiento 21F, se cocinó un proceso por el cual, un gobierno que etuvo 14 años, caería. La rabia acumulada por malos manejos del estado, acusaciones de corrupción, hasta atentados cometidos por el propio gobierno. Todo se acumuló para que en las próximas elecciones, el gobierno oficialista sea sumamente deslegitimado y acusado de fraude electoral; en efecto, ellos salieron ganadores, ¿cuándo?, en 2019.</p>
+                        <p>Podría pasarme horas contando los sucesos, todo parecía de palícula, las persecuciones, las marchas, el amotinamiento policial; todo eso fue como ver una serie, fue mi primer interés real por aprender de la política. Vivir ese proceso, esa transición política en carne propia, fue lo que me acercó a la política y lo que hizo que se convirtiera en un pasatiempo.</p>
+                        <p>A partir de ese momento, empecé a ver más las noticias, no solo de un noticiero, de varios, para no caer radicalizado en un bando. Fui aprendiendo varias cosas de mi país, descubrí que si me interesaba la política, es obligatorio que me guste la historia, así fue. Devoré un libro de la historia de mi país solo por diversión y me encantó, no podía creer que antes no le haya prestado más atención. Luego, me hartó la política de mi país, así que decidí ir más alla, fuera de las fronteras.</p>
+                        <p>La geopolítica fue más difícil, aún sigo investigando lo que puedo. En resumidas cuentas, si me llevó como dos años "formarme" para conocer la política de mi país, iba a tomar mucho tiempo meterme en el exterior. Mucha historia, muchos puntos de vista, muchos conceptos nuevos que aprender, así como redefinir los ya existente. La persona que te diga que la geopolítica es fácil, te miente descaradamente, porque no, no es fácil de entender. Muchas veces puedes llegar a una conclusión basada en tus sesgos.</p>
+                        <p>¿Pero por qué cuentas todo eso? Porque cuando conocí la política, inventé un personaje, originalmente era Mr. Jones, un hombre que decide iniciar una revolución para salvar al país; que representaba mis deseos de fomentar una revolución, pero cuanto más aprenía de política, la historia cambiaba, los objetivos del mismo personaje cambiaban, Mr Jones evolucionaba conmigo. Me di cuenta que a medida que cambiaba Mr Jones, también cambiaba mi manera de ver al mundo, que mi viaje era como el de Mr Jones, todo lo que aprendí, podría ser contado.</p>
+                        <p>Decidí plasmar mis conocimientos en palabras, pero no podía hacerlo solo a través de un personaje, tenía que hacerlo a través de varios, y decidí separar a Mr Jones en varios personajes, Lau, Tina, Falagka, etc. Todos representan lo que aprendí de política, pero no propaganda política, nada de incentivar a las derechas o izquierdas. Hay enseñanzas en todos mis conocimientos, que siento que se pueden aplicar a la vida cotidiana de todos. Quiero que esas enseñanzas lleguen al menos a una persona, yo con eso, ya soy feliz. Además, ya de por sí, me gusta escribir, así que premio doble.</p>
+                        <p>Para acabar, si estás leyendo esto, estoy seguro que ya has leído el inicio del libro, habrá constantes actualizaciones, la meta es un capítulo por semana, pero hay momentos en los que el tiempo no da, por responsabilidades como los estdios, o necesidades como conseguir trabajo (inserte una canción de chamba). Ante todo, las actualizaciones llegarán primero a la página, a wattpad llegarán mas tarde.</p>
+                        <p>Gracias por leer, espero sus reseñas en wattpad o si alguna vez publico algo en las redes 👀.</p>
+                    </article>
+
+                    <article class="boton" id="boton">
+                        <a href="../Leer/leer.html" class="boton-lectura">Leer</a>
+                    </article>
+
+                    <article class="botonDM" id="botonDM">
+                        <a href="../Leer/leer.html" class="boton-lectura">Leer MO</a>
+                    </article>
                 </section>
             </main>
         </section>
 
         <section>
-            <footer class="pie">
-                <section class="redes">
+            <footer  class="pie" id="pie">
+                <section class="redes" id="misRedes">
                     <h2>Redes</h2>
 
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Facebool</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Youtube</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <div class="contenedor-redes">
+                        <a  href="https://www.instagram.com/leoposteando/" target="_blank" rel="noopener noreferrer" class="iconosUwU"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg></a>
+
+                        <a href="https://www.youtube.com/@LeoPorLaEdici%C3%B3n" target="_blank" rel="noopener noreferrer" class="iconosUwU"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg></a>
+
+                        <a href="https://x.com/leoSinContexto" target="_blank" rel="noopener noreferrer" class="iconosUwU"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg></a>
+                    </div>
+                </section>
+
+                <section class="derechos">
+                    <p>©2025 Todo el material de este sitio web es propiedad intelectual de Leo Con Lentes (Saci)</p>
                 </section>
             </footer>
         </section>
-        <script src="./js/js.js"></script>
+        <script src="./js/blog.js"></script>
     </body>
 </html>

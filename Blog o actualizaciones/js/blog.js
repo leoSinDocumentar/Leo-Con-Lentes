@@ -18,11 +18,8 @@ function verificacionModo(){
         introduccion.classList.add('introduccionDM');
         introduccion.classList.remove('introduccion');
 
-        introduccioncontenido.classList.add('introduccion-contenidoDM');
-        introduccioncontenido.classList.remove('introduccion-contenido');
-
-        portada.classList.add('portadaDM');
-        portada.classList.remove('portada');
+        sinopsiscontenido.classList.add('sinopsis-contenidoDM');
+        sinopsiscontenido.classList.remove('sinopsis-contenido');
 
         pie.classList.add('pieDM');
         pie.classList.remove('pie');
@@ -30,8 +27,8 @@ function verificacionModo(){
         redes.classList.add('redesDM');
         redes.classList.remove('redes');
 
-        botonDM.style.display = 'flex'
-        boton.style.display = 'none'
+        botonDM.style.display = 'flex';
+        boton.style.display = 'none';
     }
     else if (document.getElementById("modoClaro").checked){
         navegacionPrincipal.classList.add('navegacion-principal');
@@ -52,11 +49,8 @@ function verificacionModo(){
         introduccion.classList.add('introduccion');
         introduccion.classList.remove('introduccionDM');
 
-        introduccioncontenido.classList.add('introduccion-contenido');
-        introduccioncontenido.classList.remove('introduccion-contenidoDM');
-
-        portada.classList.add('portada');
-        portada.classList.remove('portadaDM');
+        sinopsiscontenido.classList.add('sinopsis-contenido');
+        sinopsiscontenido.classList.remove('sinopsis-contenidoDM');
 
         pie.classList.add('pie');
         pie.classList.remove('pieDM');
@@ -64,8 +58,8 @@ function verificacionModo(){
         redes.classList.add('redes');
         redes.classList.remove('redesDM');
 
-        boton.style.display = 'flex'
-        botonDM.style.display = 'none'
+        boton.style.display = 'flex';
+        botonDM.style.display = 'none';
     }
 }
 
@@ -83,8 +77,7 @@ let modoLectura = document.getElementById('modoLectura');
 let iconoOscuro = document.getElementById('iconoOscuro');
 let iconoClaro = document.getElementById('iconoClaro');
 let introduccion = document.getElementById('introduccion');
-let introduccioncontenido = document.getElementById('introduccion-contenido');
-let portada = document.getElementById('portada');
+let sinopsiscontenido = document.getElementById('sinopsis-contenido');
 let boton = document.getElementById('boton');
 let botonDM = document.getElementById('botonDM');
 let pie = document.getElementById('pie');

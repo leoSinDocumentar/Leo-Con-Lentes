@@ -1,80 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/leer.css">
+        <link rel="icon" type="image/png" href="../assets/Logo Leo.png">
         <title>Leo Con Lentes</title>
     </head>
     <body>
         <section>
-            <header class="cabezera">
-                <section>
-                    <h1>Leo Con Lentes</h1>
-                </section>
-
-                <section>
-                    <p>Darkmode</p>
-                    <p>Lightmode</p>
-                </section>
+            <header class="cabezera" id="cabezera">
+                <h1>Leo Con Lentes</h1>
             </header>
         </section>
 
-        <section>
-            <nav>
-                <section>
-                    <a href="../index.html">¿Qué es El juramento de 2009?</a>
-                    <a href="#">Leer El juramento de 2009</a>
-                    <a href="#">Ilustraciones y bocetos</a>
-                    <a href="#">Conoce el mundo</a>
-                    <a href="../Blog o actualizaciones/blog.html">Blog / Actualizaciones</a>
-                    <a href="#">Apoyo</a>
-                    <a href="#">Redes</a>
-                </section>
-                <section class="modoLectura">
-                    <p>Darkmode</p>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
-                    
-                    <p>Lightmode</p>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brightness-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M12 5l0 .01" /><path d="M17 7l0 .01" /><path d="M19 12l0 .01" /><path d="M17 17l0 .01" /><path d="M12 19l0 .01" /><path d="M7 17l0 .01" /><path d="M5 12l0 .01" /><path d="M7 7l0 .01" /></svg>
-                </section>
-            </nav>
-        </section>
+        <!-- Esta es la navegacion -->
 
-        <section>
+        <nav class="navegacion-principal" id="navegacionPrincipal">
+            <section class="navegacion-botones" id="navegacion-botones">
+                <a href="../index.html">¿Qué es El juramento de 2009?</a>
+                <a href="./leer.html">Leer El juramento de 2009</a>
+                <a href="../Blog o actualizaciones/blog.html">Blog / Actualizaciones</a>
+                <a href="#misRedes">Redes</a>
+            </section>
+
+                <!-- Este es el modo de lectura, se escoge entre modo oscuro y modo claro -->
+
+            <section class="modoLectura" id="modoLectura">
+                <div class="modoLectura-contenedor">
+                    <article>
+                        <label for="modoOscuro" class="iconos-modo" id="iconoOscuro">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+                        </label>
+                        <input type="radio" name="modalidad" id="modoOscuro">
+                    </article>
+
+                    <article>
+                        <label for="modoClaro" class="iconos-modo" id="iconoClaro">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brightness-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M12 5l0 .01" /><path d="M17 7l0 .01" /><path d="M19 12l0 .01" /><path d="M17 17l0 .01" /><path d="M12 19l0 .01" /><path d="M7 17l0 .01" /><path d="M5 12l0 .01" /><path d="M7 7l0 .01" /></svg>
+                        </label>
+                        <input type="radio" name="modalidad" id="modoClaro">
+                    </article>
+                </div>
+            </section>
+        </nav>
+
+        <section class="sinopsis">
             <main>
-                <section class="Lectura">
-                    <h2>El juramento de 2009</h2>
-                    
+                <h3 class="pdfOscuro" id="pdfOscuro">PDF modo oscuro</h3>
+                <section class="introduccion" id="introduccion">
+                    <iframe style="border: none;" src="./pdf/El-juramento-de-2009-1.pdf" class="elPDF" id="elPDF"></iframe>
+                    <iframe style="border: none;" src="./pdf/El-juramento-de-2009-DM.pdf" class="elPDFDM" id="elPDFDM"></iframe>
                 </section>
-
-                <section>
-                    <embed src="./pdf/El juramento del 2009 (alpha).pdf" type="application/pdf" width="100%" height="1000rem">
-                </section>
-
-                <!-- <section>
-                    <iframe src="./pdf/Curso Python para Principiantes (Eugenia Bahit) (Z-Library).pdf" width="100%" height="600px"></iframe>
-                </section> -->
+                <h3 class="pdfOscuro" id="pdfOscuro">PDF modo oscuro</h3>
             </main>
         </section>
 
         <section>
-            <footer class="pie">
-                <section class="derechos">
-                    <p>Todos los derechos reservados</p>
-                </section>
-
-                <section class="redes">
+            <footer  class="pie" id="pie">
+                <section class="redes" id="misRedes">
                     <h2>Redes</h2>
 
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Facebool</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Youtube</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <div class="contenedor-redes">
+                        <a  href="https://www.instagram.com/leoposteando/" target="_blank" rel="noopener noreferrer" class="iconosUwU"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg></a>
+
+                        <a href="https://www.youtube.com/@LeoPorLaEdici%C3%B3n" target="_blank" rel="noopener noreferrer" class="iconosUwU"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" /></svg></a>
+
+                        <a href="https://x.com/leoSinContexto" target="_blank" rel="noopener noreferrer" class="iconosUwU"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg></a>
+                    </div>
+                </section>
+
+                <section class="derechos">
+                    <p>©2025 Todo el material de este sitio web es propiedad intelectual de Leo Con Lentes (Saci)</p>
                 </section>
             </footer>
         </section>
-        <script src="../js/js.js"></script>
+        <script src="./js/leer.js"></script>
     </body>
 </html>

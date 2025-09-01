@@ -82,6 +82,10 @@ h2{
     font-size: 2.5rem;
 }
 
+.navegacion-botones a:hover{
+    color: var(--blanco);
+}
+
 .modoLectura{
     background-color: var(--blanco);
 }
@@ -105,33 +109,15 @@ h2{
 
 .introduccion{
     background-color: var(--principal);
-    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
-.introduccion h2{
-    text-align: center;
-    padding-right: 15rem;
-    font-size: 4rem;
-}
-
-.introduccion-contenido{
-    padding-left: 2rem;
-    background-color: var(--blanco);
-    font-size: 2.5rem;
-}
-
-.introduccion-contenido h3{
-    font-size: 4rem;
-}
-
-.portada{
-    padding-left: 45rem;
-}
-
-.portada img{
-    border-style: solid;
-    border-width: 1rem;
-    border-color: var(--negro);
+.elPDF{
+    padding-top: 3rem;
+    width: 95%;
+    padding-left: 0rem;
+    height: 100vh;
 }
 
 .boton{
@@ -155,7 +141,7 @@ h2{
 .pie{
     margin-top: 0%;
     background-color: var(--principal);
-    margin-left: 0rem;
+    margin-left: 36.2rem;
 }
 .pie a{
     display: inline;
@@ -170,15 +156,11 @@ h2{
 .redes h2{
     margin-top: 0;
     font-size: 3.5rem;
-    /* padding-left: 85rem; */
-    display: flex;
-    justify-content: center;
+    padding-left: 85rem;
 }
 
 .contenedor-redes{
-    padding-left: 0rem;
-    display: flex;
-    justify-content: center;
+    padding-left: 86rem;
 }
 
 .iconosUwU{
@@ -186,9 +168,7 @@ h2{
 }
 
 .derechos{
-    padding-left: 0rem;
-    display: flex;
-    justify-content: center;
+    padding-left: 72rem;
 }
 
 /*---modo oscuro---*/
@@ -228,45 +208,24 @@ h2{
 }
 
 .introduccionDM{
-    background-color: var(--principalDM);
-    padding-top: 1rem;;
-}
-
-.introduccionDM h2{
-    text-align: center;
-    padding-right: 0rem;
-    font-size: 4rem;
-    color: var(--blanco);
-}
-
-.introduccion-contenidoDM{
-    padding-left: 2rem;
     background-color: var(--gris);
-    color: var(--blanco);
-    font-size: 2.5rem;
-}
-
-.introduccion-contenidoDM h3{
-    font-size: 4rem;
-    color: var(--blanco);
-}
-
-.portadaDM{
-    padding-left: 45rem;
-}
-
-.portadaDM img{
-    border-style: solid;
-    border-width: 1rem;
-    border-color: var(--blanco);
-}
-
-.botonDM{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+}
+
+.pdfOscuro{
+    text-align: center;
+    color: var(--blanco);
+    font-size: 3.5rem;
+    background-color: var(--principalDM);
+    margin: 0rem;
+}
+
+.elPDFDM{
+    padding-top: 3rem;
+    width: 95%;
     padding-left: 0rem;
-    padding-bottom: 1rem;
+    height: 100vh;
 }
 
 .pieDM{
@@ -293,8 +252,6 @@ h2{
 }
 
 /* media queries */
-
-/* miniaturas :v  */
 
 @media (max-width: 390px){
     .cabezera h1{
@@ -323,35 +280,11 @@ h2{
         padding-top: 12rem;
     }
 
-    .introduccion h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 1.7rem;
-    }
-
-    .introduccion-contenido{
-        padding-left: 2rem;
-        background-color: var(--blanco);
-        font-size: 1.5rem;
-    }
-
-    .introduccion-contenido h3{
-        font-size: 2rem;
-        margin: 0rem;
-    }
-
-    .portada{
+    .elPDF{
+        padding-top: 3rem;
+        width: 100%;
         padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portada img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--negro);
-        width: 22rem;
-        height: 33rem;
+        height: 80vh;
     }
 
     .boton{
@@ -431,32 +364,14 @@ h2{
         padding-top: 12rem;
     }
 
-    .introduccionDM h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 1.7rem;
-    }
-
-    .introduccion-contenidoDM{
-        padding-left: 2rem;
-        background-color: var(--gris);
-        font-size: 1.5rem;
-    }
-
-    .introduccion-contenidoDM h3{
-        font-size: 2rem;
-        margin: 0rem;
+    .elPDFDM{
+        padding-top: 3rem;
+        width: 100%;
+        padding-left: 0rem;
+        height: 80vh;
     }
 
     .boton{
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        padding-left: 0rem;
-        padding-bottom: 1rem;
-    }
-
-    .botonDM{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
@@ -471,18 +386,12 @@ h2{
         font-weight: bold;
     }
 
-    .portadaDM{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portadaDM img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--blanco);
-        width: 22rem;
-        height: 33rem;
+    .pdfOscuro{
+        text-align: center;
+        color: var(--blanco);
+        font-size: 2rem;
+        background-color: var(--principalDM);
+        margin: 0rem;
     }
 
     .pieDM{
@@ -490,7 +399,7 @@ h2{
         background-color: var(--principalDM);
         margin-left: 0rem;
     }
-    .piedm a{
+    .pieDM a{
         display: inline;
         font-size: 1rem;
         color: var(--blanco);
@@ -510,26 +419,24 @@ h2{
     }
 }
 
-/* Celulares pequeños (hasta ~480px) */
 @media (min-width: 391px) and (max-width: 480px) {
-        /* estilos para móviles muy pequeños */
     .cabezera h1{
         font-size: 2.5rem;
     }
     .navegacion-principal{
         height: 13rem;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 0.03rem;
         text-align: center;
     }
 
     .navegacion-botones a{
         font-size: 2rem;
     }
-
     .iconos-modo svg{
         width: 2rem;
     }
+
     .sinopsis{
         margin-top: 5rem;
         margin-left: 0rem;
@@ -539,35 +446,11 @@ h2{
         padding-top: 13rem;
     }
 
-    .introduccion h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 2rem;
-    }
-
-    .introduccion-contenido{
-        padding-left: 2rem;
-        background-color: var(--blanco);
-        font-size: 1.7rem;
-    }
-
-    .introduccion-contenido h3{
-        font-size: 2rem;
-        margin: 0rem;
-    }
-
-    .portada{
+    .elPDF{
+        padding-top: 3rem;
+        width: 100%;
         padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portada img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--negro);
-        width: 28rem;
-        height: 42rem;
+        height: 80vh;
     }
 
     .boton{
@@ -597,7 +480,7 @@ h2{
     }
 
     .redes h2{
-        font-size: 2rem;
+        font-size: 1.7rem;
         display: flex;
         justify-content: center;
         margin-top: 0;
@@ -613,10 +496,6 @@ h2{
 
     .contenedor-redes svg{
         width: 1.5rem;
-    }
-
-    .iconosUwU{
-        color: var(--blanco);
     }
 
     .derechos{
@@ -651,46 +530,14 @@ h2{
         padding-top: 13rem;
     }
 
-    .introduccionDM h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 2rem;
-    }
-
-    .introduccion-contenidoDM{
-        padding-left: 2rem;
-        background-color: var(--gris);
-        font-size: 1.7rem;
-    }
-
-    .introduccion-contenidoDM h3{
-        font-size: 2rem;
-        margin: 0rem;
-    }
-
-    .portadaDM{
+    .elPDFDM{
+        padding-top: 3rem;
+        width: 100%;
         padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portadaDM img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--blanco);
-        width: 28rem;
-        height: 42rem;
+        height: 80vh;
     }
 
     .boton{
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        padding-left: 0rem;
-        padding-bottom: 1rem;
-    }
-
-    .botonDM{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
@@ -705,6 +552,14 @@ h2{
         font-weight: bold;
     }
 
+    .pdfOscuro{
+        text-align: center;
+        color: var(--blanco);
+        font-size: 2rem;
+        background-color: var(--principalDM);
+        margin: 0rem;
+    }
+
     .pieDM{
         margin-top: 0%;
         background-color: var(--principalDM);
@@ -714,6 +569,10 @@ h2{
         display: inline;
         font-size: 1rem;
         color: var(--blanco);
+    }
+
+    .redesDM{
+        background-color: var(--gris);
     }
 
     .redesDM h2{
@@ -726,10 +585,7 @@ h2{
     }
 }
 
-/* Celulares estándar (~481px a 767px) */
-@media (min-width: 481px) and (max-width: 767px){
-    /* smartphones */
-
+@media (min-width: 481px) and (max-width: 767px) {
     .cabezera h1{
         font-size: 2.7rem;
     }
@@ -743,10 +599,10 @@ h2{
     .navegacion-botones a{
         font-size: 2rem;
     }
-
     .iconos-modo svg{
         width: 2rem;
     }
+
     .sinopsis{
         margin-top: 5rem;
         margin-left: 0rem;
@@ -756,35 +612,11 @@ h2{
         padding-top: 13rem;
     }
 
-    .introduccion h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 2rem;
-    }
-
-    .introduccion-contenido{
-        padding-left: 2rem;
-        background-color: var(--blanco);
-        font-size: 1.8rem;
-    }
-
-    .introduccion-contenido h3{
-        font-size: 2rem;
-        margin: 0rem;
-    }
-
-    .portada{
+    .elPDF{
+        padding-top: 3rem;
+        width: 100%;
         padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portada img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--negro);
-        width: 30rem;
-        height: 45rem;
+        height: 80vh;
     }
 
     .boton{
@@ -864,43 +696,34 @@ h2{
         padding-top: 13rem;
     }
 
-    .introduccionDM h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 2rem;
-    }
-
-    .introduccion-contenidoDM{
-        padding-left: 2rem;
-        background-color: var(--gris);
-        font-size: 1.8rem;
-    }
-
-    .introduccion-contenidoDM h3{
-        font-size: 2rem;
-        margin: 0rem;
-    }
-
-    .portadaDM{
+    .elPDFDM{
+        padding-top: 3rem;
+        width: 100%;
         padding-left: 0rem;
-        display: flex;
-        justify-content: center;
+        height: 80vh;
     }
 
-    .portadaDM img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--blanco);
-        width: 30rem;
-        height: 45rem;
-    }
-
-    .botonDM{
+    .boton{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
         padding-left: 0rem;
         padding-bottom: 1rem;
+    }
+
+    .boton-lectura{
+        padding: 0.5rem 1rem;
+        background-color: var(--blanco);
+        border-radius: 20%;
+        font-weight: bold;
+    }
+
+    .pdfOscuro{
+        text-align: center;
+        color: var(--blanco);
+        font-size: 2rem;
+        background-color: var(--principalDM);
+        margin: 0rem;
     }
 
     .pieDM{
@@ -914,6 +737,10 @@ h2{
         color: var(--blanco);
     }
 
+    .redesDM{
+        background-color: var(--gris);
+    }
+
     .redesDM h2{
         font-size: 2rem;
         display: flex;
@@ -924,10 +751,7 @@ h2{
     }
 }
 
-/* Tablets (~768px a 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    /* tablets vertical/horizontal */
-
     .cabezera h1{
         font-size: 2.7rem;
     }
@@ -941,48 +765,30 @@ h2{
     .navegacion-botones a{
         font-size: 2.1rem;
     }
-
     .iconos-modo svg{
         width: 2rem;
     }
+
     .sinopsis{
         margin-top: 5rem;
         margin-left: 0rem;
     }
+
     .introduccion{
         background-color: var(--principal);
         padding-top: 13rem;
     }
-
-    .introduccion h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 2.5rem;
+    
+    .elPDF{
+        padding-top: 3rem;
+        width: 100%;
+        padding-left: 0rem;
+        height: 80vh;
     }
 
-    .introduccion-contenido{
-        padding-left: 2rem;
-        background-color: var(--blanco);
-        font-size: 1.9rem;
-    }
-
-    .introduccion-contenido h3{
+    .sinopsis-contenido h3{
         font-size: 2.5rem;
         margin: 0rem;
-    }
-
-    .portada{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portada img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--negro);
-        width: 34rem;
-        height: 51rem;
     }
 
     .boton{
@@ -1062,43 +868,34 @@ h2{
         padding-top: 13rem;
     }
 
-    .introduccionDM h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 2.5rem;
-    }
-
-    .introduccion-contenidoDM{
-        padding-left: 2rem;
-        background-color: var(--gris);
-        font-size: 1.9rem;
-    }
-
-    .introduccion-contenidoDM h3{
-        font-size: 2.5rem;
-        margin: 0rem;
-    }
-
-    .portadaDM{
+    .elPDFDM{
+        padding-top: 3rem;
+        width: 100%;
         padding-left: 0rem;
-        display: flex;
-        justify-content: center;
+        height: 80vh;
     }
 
-    .portadaDM img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--blanco);
-        width: 34rem;
-        height: 51rem;
-    }
-
-    .botonDM{
+    .boton{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
         padding-left: 0rem;
         padding-bottom: 1rem;
+    }
+
+    .boton-lectura{
+        padding: 0.5rem 1rem;
+        background-color: var(--blanco);
+        border-radius: 20%;
+        font-weight: bold;
+    }
+
+    .pdfOscuro{
+        text-align: center;
+        color: var(--blanco);
+        font-size: 2.5rem;
+        background-color: var(--principalDM);
+        margin: 0rem;
     }
 
     .pieDM{
@@ -1108,12 +905,16 @@ h2{
     }
     .pieDM a{
         display: inline;
-        font-size: 1rem;
+        font-size: 2rem;
         color: var(--blanco);
     }
 
+    .redesDM{
+        background-color: var(--gris);
+    }
+
     .redesDM h2{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         display: flex;
         justify-content: center;
         margin-top: 0;
@@ -1122,11 +923,7 @@ h2{
     }
 }
 
-    /* Laptops (~1025px a 1366px) */
 @media (min-width: 1025px) and (max-width: 1366px) {
-    
-    /* laptops comunes */
-
     .cabezera h1{
         font-size: 3rem;
     }
@@ -1145,10 +942,10 @@ h2{
     .navegacion-botones a{
         font-size: 2.4rem;
     }
-
     .iconos-modo svg{
-        width: 2.5rem;
+        width: 2rem;
     }
+
     .sinopsis{
         margin-top: 5rem;
         margin-left: 0rem;
@@ -1156,37 +953,6 @@ h2{
     .introduccion{
         background-color: var(--principal);
         padding-top: 9rem;
-    }
-
-    .introduccion h2{
-        text-align: center;
-        padding-right: 0rem;
-        font-size: 2.8rem;
-    }
-
-    .introduccion-contenido{
-        padding-left: 2rem;
-        background-color: var(--blanco);
-        font-size: 2.2rem;
-    }
-
-    .introduccion-contenido h3{
-        font-size: 2.8rem;
-        margin: 0rem;
-    }
-
-    .portada{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portada img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--negro);
-        width: 50rem;
-        height: 75rem;
     }
 
     .boton{
@@ -1211,12 +977,12 @@ h2{
     }
     .pie a{
         display: inline;
-        font-size: 2rem;
+        font-size: 1rem;
         color: var(--negro);
     }
 
     .redes h2{
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         display: flex;
         justify-content: center;
         margin-top: 0;
@@ -1251,6 +1017,7 @@ h2{
     }
 
     .navegacion-botonesDM{
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -1259,7 +1026,7 @@ h2{
         font-size: 2.4rem;
     }
     .iconos-modoDM svg{
-        width: 2.5rem;
+        width: 2rem;
     }
 
     .sinopsis{
@@ -1277,37 +1044,38 @@ h2{
         font-size: 2.8rem;
     }
 
-    .introduccion-contenidoDM{
+    .sinopsis-contenidoDM{
         padding-left: 2rem;
         background-color: var(--gris);
         font-size: 2.2rem;
     }
 
-    .introduccion-contenidoDM h3{
+    .sinopsis-contenidoDM h3{
         font-size: 2.8rem;
         margin: 0rem;
     }
 
-    .portadaDM{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portadaDM img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--blanco);
-        width: 50rem;
-        height: 75rem;
-    }
-    
-    .botonDM{
+    .boton{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
         padding-left: 0rem;
         padding-bottom: 1rem;
+    }
+
+    .boton-lectura{
+        padding: 0.5rem 1rem;
+        background-color: var(--blanco);
+        border-radius: 20%;
+        font-weight: bold;
+    }
+
+    .pdfOscuro{
+        text-align: center;
+        color: var(--blanco);
+        font-size: 2.8rem;
+        background-color: var(--principalDM);
+        margin: 0rem;
     }
 
     .pieDM{
@@ -1321,6 +1089,10 @@ h2{
         color: var(--blanco);
     }
 
+    .redesDM{
+        background-color: var(--gris);
+    }
+
     .redesDM h2{
         font-size: 2.8rem;
         display: flex;
@@ -1329,10 +1101,9 @@ h2{
         padding-left: 0rem;
         margin-bottom: 0rem;
     }
-/* Monitores medianos (~1367px a 1920px → 24") */
 }
+
 @media (min-width: 1367px) and (max-width: 1920px) {
-    /* pantallas de escritorio medianas */
     .cabezera h1{
         font-size: 3.5rem;
     }
@@ -1351,10 +1122,10 @@ h2{
     .navegacion-botones a{
         font-size: 3.2rem;
     }
-
     .iconos-modo svg{
         width: 2.5rem;
     }
+
     .sinopsis{
         margin-top: 5rem;
         margin-left: 0rem;
@@ -1370,29 +1141,15 @@ h2{
         font-size: 3rem;
     }
 
-    .introduccion-contenido{
+    .sinopsis-contenido{
         padding-left: 2rem;
         background-color: var(--blanco);
         font-size: 2.4rem;
     }
 
-    .introduccion-contenido h3{
+    .sinopsis-contenido h3{
         font-size: 3rem;
         margin: 0rem;
-    }
-
-    .portada{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portada img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--negro);
-        width: 60rem;
-        height: 90rem;
     }
 
     .boton{
@@ -1457,12 +1214,13 @@ h2{
     }
 
     .navegacion-botonesDM{
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
     .navegacion-botonesDM a{
-        font-size: 3.3rem;
+        font-size: 3.2rem;
     }
     .iconos-modoDM svg{
         width: 2.5rem;
@@ -1483,37 +1241,38 @@ h2{
         font-size: 3rem;
     }
 
-    .introduccion-contenidoDM{
+    .sinopsis-contenidoDM{
         padding-left: 2rem;
         background-color: var(--gris);
         font-size: 2.4rem;
     }
 
-    .introduccion-contenidoDM h3{
+    .sinopsis-contenidoDM h3{
         font-size: 3rem;
         margin: 0rem;
     }
 
-    .portadaDM{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portadaDM img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--blanco);
-        width: 60rem;
-        height: 90rem;
-    }
-        
-    .botonDM{
+    .boton{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
         padding-left: 0rem;
         padding-bottom: 1rem;
+    }
+
+    .boton-lectura{
+        padding: 0.5rem 1rem;
+        background-color: var(--blanco);
+        border-radius: 20%;
+        font-weight: bold;
+    }
+
+    .pdfOscuro{
+        text-align: center;
+        color: var(--blanco);
+        font-size: 3rem;
+        background-color: var(--principalDM);
+        margin: 0rem;
     }
 
     .pieDM{
@@ -1527,6 +1286,10 @@ h2{
         color: var(--blanco);
     }
 
+    .redesDM{
+        background-color: var(--gris);
+    }
+
     .redesDM h2{
         font-size: 3rem;
         display: flex;
@@ -1537,10 +1300,7 @@ h2{
     }
 }
 
-/* Monitores grandes (1921px a 2560px → 27") */
 @media (min-width: 1921px) and (max-width: 2560px) {
-    /* pantallas grandes / 2K */
-
     .cabezera h1{
         font-size: 4rem;
     }
@@ -1559,10 +1319,10 @@ h2{
     .navegacion-botones a{
         font-size: 3.8rem;
     }
-
     .iconos-modo svg{
         width: 2.5rem;
     }
+
     .sinopsis{
         margin-top: 5rem;
         margin-left: 0rem;
@@ -1578,29 +1338,15 @@ h2{
         font-size: 3.5rem;
     }
 
-    .introduccion-contenido{
+    .sinopsis-contenido{
         padding-left: 2rem;
         background-color: var(--blanco);
         font-size: 2.8rem;
     }
 
-    .introduccion-contenido h3{
+    .sinopsis-contenido h3{
         font-size: 3.5rem;
         margin: 0rem;
-    }
-
-    .portada{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portada img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--negro);
-        width: 60rem;
-        height: 90rem;
     }
 
     .boton{
@@ -1691,37 +1437,38 @@ h2{
         font-size: 3.5rem;
     }
 
-    .introduccion-contenidoDM{
+    .sinopsis-contenidoDM{
         padding-left: 2rem;
         background-color: var(--gris);
         font-size: 2.8rem;
     }
 
-    .introduccion-contenidoDM h3{
+    .sinopsis-contenidoDM h3{
         font-size: 3.5rem;
         margin: 0rem;
     }
 
-    .portadaDM{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portadaDM img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--blanco);
-        width: 60rem;
-        height: 90rem;
-    }
-
-    .botonDM{
+    .boton{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
         padding-left: 0rem;
         padding-bottom: 1rem;
+    }
+
+    .boton-lectura{
+        padding: 0.5rem 1rem;
+        background-color: var(--blanco);
+        border-radius: 20%;
+        font-weight: bold;
+    }
+
+    .pdfOscuro{
+        text-align: center;
+        color: var(--blanco);
+        font-size: 3.5rem;
+        background-color: var(--principalDM);
+        margin: 0rem;
     }
 
     .pieDM{
@@ -1733,6 +1480,10 @@ h2{
         display: inline;
         font-size: 2rem;
         color: var(--blanco);
+    }
+
+    .redesDM{
+        background-color: var(--gris);
     }
 
     .redesDM h2{
@@ -1747,12 +1498,12 @@ h2{
 
 @media (mind-width: 2561){
     .cabezera h1{
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
     .navegacion-principal{
         height: 9rem;
         width: 100%;
-        margin-top: 2.5rem;
+        margin-top: 4rem;
         text-align: center;
     }
 
@@ -1762,50 +1513,36 @@ h2{
     }
 
     .navegacion-botones a{
-        font-size: 3.3rem;
+        font-size: 3.8rem;
     }
-
     .iconos-modo svg{
         width: 2.5rem;
     }
+
     .sinopsis{
         margin-top: 5rem;
         margin-left: 0rem;
     }
     .introduccion{
         background-color: var(--principal);
-        padding-top: 10.5rem;
+        padding-top: 12rem;
     }
 
     .introduccion h2{
         text-align: center;
         padding-right: 0rem;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
-    .introduccion-contenido{
+    .sinopsis-contenido{
         padding-left: 2rem;
         background-color: var(--blanco);
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
-    .introduccion-contenido h3{
-        font-size: 3rem;
+    .sinopsis-contenido h3{
+        font-size: 3.5rem;
         margin: 0rem;
-    }
-
-    .portada{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portada img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--negro);
-        width: 60rem;
-        height: 90rem;
     }
 
     .boton{
@@ -1835,7 +1572,7 @@ h2{
     }
 
     .redes h2{
-        font-size: 3rem;
+        font-size: 3.5rem;
         display: flex;
         justify-content: center;
         margin-top: 0;
@@ -1850,7 +1587,7 @@ h2{
     }
 
     .contenedor-redes svg{
-        width: 2rem;
+        width: 2.5rem;
     }
 
     .derechos{
@@ -1865,7 +1602,7 @@ h2{
     .navegacion-principalDM{
         height: 9rem;
         width: 100%;
-        margin-top: 2.5rem;
+        margin-top: 4rem;
         text-align: center;
     }
 
@@ -1875,7 +1612,7 @@ h2{
     }
 
     .navegacion-botonesDM a{
-        font-size: 3.3rem;
+        font-size: 3.8rem;
     }
     .iconos-modoDM svg{
         width: 2.5rem;
@@ -1887,46 +1624,47 @@ h2{
     }
     .introduccionDM{
         background-color: var(--principalDM);
-        padding-top: 10.5rem;
+        padding-top: 12rem;
     }
 
     .introduccionDM h2{
         text-align: center;
         padding-right: 0rem;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
-    .introduccion-contenidoDM{
+    .sinopsis-contenidoDM{
         padding-left: 2rem;
         background-color: var(--gris);
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
-    .introduccion-contenidoDM h3{
-        font-size: 3rem;
+    .sinopsis-contenidoDM h3{
+        font-size: 3.5rem;
         margin: 0rem;
     }
 
-    .portadaDM{
-        padding-left: 0rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .portadaDM img{
-        border-style: solid;
-        border-width: 0.5rem;
-        border-color: var(--blanco);
-        width: 60rem;
-        height: 90rem;
-    }
-
-    .botonDM{
+    .boton{
         display: flex;
         justify-content: center;
         margin-top: 1rem;
         padding-left: 0rem;
         padding-bottom: 1rem;
+    }
+
+    .boton-lectura{
+        padding: 0.5rem 1rem;
+        background-color: var(--blanco);
+        border-radius: 20%;
+        font-weight: bold;
+    }
+
+    .pdfOscuro{
+        text-align: center;
+        color: var(--blanco);
+        font-size: 3.5rem;
+        background-color: var(--principalDM);
+        margin: 0rem;
     }
 
     .pieDM{
@@ -1940,8 +1678,12 @@ h2{
         color: var(--blanco);
     }
 
+    .redesDM{
+        background-color: var(--gris);
+    }
+
     .redesDM h2{
-        font-size: 3rem;
+        font-size: 3.5rem;
         display: flex;
         justify-content: center;
         margin-top: 0;
